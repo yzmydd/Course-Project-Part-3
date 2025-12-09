@@ -5,13 +5,6 @@
 
 ---
 
-## Project Overview
-This project is a single-player Casino Blackjack game written in C++. It simulates realistic Blackjack gameplay, including betting, hitting, standing, doubling down, and splitting pairs. The game also includes a simplified basic strategy suggestion system to help the player make decisions based on the dealer’s up card and the player's hand.
-
-This project was created for the CIS7 course to demonstrate understanding of discrete structures, algorithmic design, and C++ programming concepts.
-
----
-
 ## Features
 - Single-player Blackjack against the dealer  
 - Full casino rules including hit, stand, double down, and split pairs  
