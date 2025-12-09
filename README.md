@@ -1,111 +1,69 @@
-# Course-Project-Part-3
-Casino Blackjack – C++ Project
-Author: Member1 (Team Name: TN)
-Date Published: (Insert your submission date here)
-Project Overview
+# Casino Blackjack – C++ Project
 
-This project is a single-player Casino Blackjack game written in C++. The program simulates realistic Blackjack gameplay using correct casino rules. The player can place bets and make decisions such as hit, stand, double down, and split pairs. The game also includes a simplified basic strategy suggestion system to guide the player based on the dealer’s up card and the player's hand.
+**Author:** Member1 (Team Name: TN)  
+**Date Published:** *(Insert date here)*  
 
-This project was developed for the CIS7 course to demonstrate algorithmic thinking, discrete structures, decision-making logic, and C++ programming techniques.
+---
 
-Features
+## Project Overview
+This project is a single-player Casino Blackjack game written in C++. It simulates realistic Blackjack gameplay, including betting, hitting, standing, doubling down, and splitting pairs. The game also includes a simplified basic strategy suggestion system to help the player make decisions based on the dealer’s up card and the player's hand.
 
-Single-player Blackjack against the dealer
+This project was created for the CIS7 course to demonstrate understanding of discrete structures, algorithmic design, and C++ programming concepts.
 
-Supports full casino rules:
+---
 
-Hit
+## Features
+- Single-player Blackjack against the dealer  
+- Full casino rules including hit, stand, double down, and split pairs  
+- Correct handling of soft and hard hands  
+- Dealer hits on 16 or less and stands on 17 or more  
+- Blackjack pays 3:2  
+- Bankroll system for betting  
+- Supports multiple hands after splitting  
+- Basic strategy recommendation system  
+- Console-based interface  
 
-Stand
+---
 
-Double Down
+## Programming Approaches and Concepts Used
 
-Split Pairs
+### Object-Oriented Programming
+- Classes created for Card, Deck, and Hand  
+- Encapsulated logic for easier maintenance and readability  
 
-Special rules for split Aces
+### Discrete Structures
+- Vectors used for the deck, player hands, and split hands  
+- Branching game decisions represented using if/else structures  
+- Game flow follows a finite state machine model  
 
-Automatic Ace handling for soft and hard hands
+### Algorithms
+- Hand value calculation with Ace-as-1-or-11 adjustment  
+- Dealer AI based on standard Blackjack rules  
+- Basic strategy decision algorithm  
 
-Dealer hits until 17 and stands on 17 or more
+### Randomization
+- Uses `std::shuffle` and `mt19937` to simulate realistic card shuffling  
 
-Blackjack pays 3:2
+---
 
-Betting system with bankroll tracking
 
-Handles multiple hands after splitting
+## How to Play
 
-Basic strategy recommendations
-
-Console-based interface
-
-Programming Approaches & Concepts Used
-1. Object-Oriented Programming
-
-Classes for Card, Deck, and Hand encapsulate the logic.
-
-Modular structure supports clean and maintainable code.
-
-2. Discrete Structures
-
-Vectors store the deck, player hands, and split hands.
-
-Decision trees model player choices such as hit/stand/double/split.
-
-The game phases act like a finite state machine.
-
-3. Algorithms
-
-Hand value calculations including Ace adjustments.
-
-Dealer AI implementation based on standard Blackjack rules.
-
-Basic strategy logic using conditional decision-making.
-
-4. Randomization
-
-Uses std::shuffle and mt19937 to simulate a shuffled deck
-
-Repository Structure
-YourRepoName
- ┣ src/
- │   ┗ blackjack.cpp
- ┣ README.md
- ┗ Blackjack_Flowchart.drawio (optional)
-
-How to Compile and Run
-Compile (Linux/Mac/WSL):
-g++ -std=c++17 blackjack.cpp -o blackjack
-
-Run:
-./blackjack
-
-Compile on Windows (MinGW):
-g++ -std=c++17 blackjack.cpp -o blackjack.exe
-
-How to Play
-
-Start the program and read the rules summary.
-
-You begin with a $100 bankroll.
-
-Enter your bet at the start of each round.
-
-Cards are dealt and one dealer card is shown.
-
-Choose an action:
-
-H = Hit
-
-S = Stand
-
-D = Double Down
-
-P = Split Pair (when allowed)
-
-Complete all player hands.
-
-Dealer reveals cards and finishes its turn.
-
-The program determines wins, losses, or pushes and updates your bankroll.
-
-You can choose to play another round.
+1. Start the program from your terminal or command prompt.
+2. You begin the game with a bankroll of $100.
+3. At the start of each round, enter the amount you want to bet.
+4. The player receives two cards, and the dealer receives two cards (one card face up).
+5. Based on your hand, choose one of the following actions:
+   - `H` = Hit (draw another card)
+   - `S` = Stand (end your turn for that hand)
+   - `D` = Double Down (double your bet and receive exactly one more card)
+   - `P` = Split (only available when the first two cards have the same value)
+6. If you split, each hand is played separately using the same rules.
+7. After all player hands are completed, the dealer reveals their full hand.
+8. The dealer hits until reaching at least 17 and stands on 17 or more.
+9. The game compares each of your hands against the dealer:
+   - Higher total wins  
+   - Same total results in a push  
+   - Going over 21 results in a bust  
+10. Your bankroll is updated based on the outcome of the round.
+11. Choose whether to continue playing or end the game.
