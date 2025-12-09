@@ -1,7 +1,7 @@
 # Casino Blackjack – C++ Project
 
-**Author:** Member1 (Team Name: TN)  
-**Date Published:** *(Insert date here)*  
+**Author:** ZM (Team Name: Don't know what name to choice)  
+**Date Published:** 12/08/2025  
 
 ---
 
