@@ -64,3 +64,48 @@ Basic strategy logic using conditional decision-making.
 4. Randomization
 
 Uses std::shuffle and mt19937 to simulate a shuffled deck
+
+Repository Structure
+YourRepoName
+ ┣ src/
+ │   ┗ blackjack.cpp
+ ┣ README.md
+ ┗ Blackjack_Flowchart.drawio (optional)
+
+How to Compile and Run
+Compile (Linux/Mac/WSL):
+g++ -std=c++17 blackjack.cpp -o blackjack
+
+Run:
+./blackjack
+
+Compile on Windows (MinGW):
+g++ -std=c++17 blackjack.cpp -o blackjack.exe
+
+How to Play
+
+Start the program and read the rules summary.
+
+You begin with a $100 bankroll.
+
+Enter your bet at the start of each round.
+
+Cards are dealt and one dealer card is shown.
+
+Choose an action:
+
+H = Hit
+
+S = Stand
+
+D = Double Down
+
+P = Split Pair (when allowed)
+
+Complete all player hands.
+
+Dealer reveals cards and finishes its turn.
+
+The program determines wins, losses, or pushes and updates your bankroll.
+
+You can choose to play another round.
